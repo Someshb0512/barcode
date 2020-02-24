@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormFIll">
+
+    <EditText
+        android:id="@+id/ADM_bs"
+        android:layout_width="335dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Admission Number"
+        android:inputType="text"
+        android:autofillHints="admission no"
+        app:layout_constraintBottom_toTopOf="@+id/NAME_bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/NAME_bs"
+        android:layout_width="335dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:autofillHints="name"
+        app:layout_constraintBottom_toTopOf="@+id/ROOM_bs"
+        app:layout_constraintEnd_toEndOf="@id/ADM_bs"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ADM_bs"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ROOM_bs"
+        android:layout_width="335dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Room No."
+        android:inputType="text"
+        android:autofillHints="room no"
+        app:layout_constraintBottom_toTopOf="@+id/PHONE_bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NAME_bs"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/PHONE_bs"
+        android:layout_width="335dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="195dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:autofillHints="phone"
+        app:layout_constraintBottom_toTopOf="@+id/REGISTER_bs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ROOM_bs"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/REGISTER_bs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="formClick"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PHONE_bs"
+        tools:ignore="HardcodedText">
+
+        <requestFocus />
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
